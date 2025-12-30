@@ -414,14 +414,6 @@ footer {
 /* ----------------------------
    Responsivt
 ---------------------------- */
-@media (max-width: 900px) {
-  .grid { grid-template-columns: 1fr; }
-  .news-grid { grid-template-columns: 1fr; }
-  .brand { min-width: unset; }
-
-  .hero { padding-right: 22px; }
-  .hero-logo { display: none; }
-}
 
 @media (max-width: 900px) {
 
