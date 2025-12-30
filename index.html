@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Skien Sjakklubb</title>
+  <meta name="description" content="Offisiell nettside for Skien Sjakklubb. Terminliste, tilbud, turneringer og kontaktinfo." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Til startsiden">
+        <img src="assets/SSK_klubb_logo.jpg" alt="Skien Sjakklubb logo" />
+        <div class="title">
+          <strong>Skien Sjakklubb</strong>
+          <span>skiensjakk.no</span>
+        </div>
+      </a>
+
+      <nav class="nav" data-nav>
+        <a href="pages/om-klubben/index.html">Om klubben</a>
+        <a href="pages/vart-tilbud/index.html">Vårt tilbud</a>
+        <a href="pages/terminliste/index.html">Terminliste</a>
+        <a href="pages/sjakkleir/index.html">Sjakkleir</a>
+        <a href="pages/turneringer/index.html">Turneringer</a>
+        <a href="pages/nyttige-lenker/index.html">Nyttige lenker</a>
+        <a href="pages/kontaktinfo/index.html">Kontaktinfo</a>
+      </nav>
+    </div>
+  </header>
+
+
+    <main class="container">
+    <section class="hero">
+        <h1>Velkommen til Skien Sjakklubb</h1>
+        <p>
+        Her finner du info om klubben, terminliste, turneringer og tilbud for barn og voksne.
+        Nettsiden er under oppbygging.
+        </p>
+
+        <div class="hero-logo">
+        <img src="/assets/SSK_klubb_logo.jpg" alt="Skien Sjakklubb">
+        </div>
+
+        <h2>Siste nyheter</h2>
+        <p>Klikk på saken for mer info.</p>
+
+        <div class="grid">
+        <a class="card card-link" href="pages/terminliste/flyer.html">
+            <h2>Flyer for vår 2026 er klar</h2>
+            <p>Vi starter opp 19 januar 2026 ved Odd Stadion.</p>
+        </a>
+
+        <a class="card card-link" href="pages/sjakkleir/index.html">
+            <h2>Bli med på sjakkleir 6–7 juni</h2>
+            <p>Informasjon om påmelding, program og priser.</p>
+        </a>
+
+        <a class="card card-link" href="pages/turneringer/ostlandserien.html">
+            <h2>Comeback i Østlandsserien</h2>
+            <p>Vi er tilbake i seriespill 2025–2026.</p>
+        </a>
+        </div>
+    </section>
+    </main>
+
+  <footer>
+    <div class="container">
+      <small>© <span id="year"></span> Skien Sjakklubb</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>
