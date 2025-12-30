@@ -422,3 +422,25 @@ footer {
   .hero { padding-right: 22px; }
   .hero-logo { display: none; }
 }
+
+@media (max-width: 900px) {
+
+  /* --- eksisterende regler --- */
+  .grid { grid-template-columns: 1fr; }
+  .news-grid { grid-template-columns: 1fr; }
+  .brand { min-width: unset; }
+  .hero { padding-right: 22px; }
+  .hero-logo { display: none; }
+
+  /* --- MOBIL: hovedmeny --- */
+  .nav {
+    justify-content: center;     /* ikke høyrejustert */
+    gap: 8px;
+  }
+
+  .nav a {
+    padding: 6px 8px;            /* mindre bokser */
+    font-size: 14px;
+    white-space: nowrap;         /* aldri linjeskift i teksten */
+  }
+}
