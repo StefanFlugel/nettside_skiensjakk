@@ -460,3 +460,51 @@ footer {
   margin-top: 0.4rem;
   text-align: center;
 }
+/* === GLOBAL BILDE-SIKRING (VIKTIG) === */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* === RESPONSIVT BILDEGALLERI === */
+.image-gallery {
+  display: grid;
+  grid-template-columns: 1fr;   /* mobil: én kolonne */
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.image-gallery figure {
+  margin: 0;
+}
+
+.image-gallery img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.image-gallery figcaption {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.4rem;
+  text-align: center;
+}
+
+/* === STØRRE SKJERMER === */
+@media (min-width: 600px) {
+  .image-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .image-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* === SIKRING MOT HORISONTAL SCROLL === */
+body {
+  overflow-x: hidden;
+}
