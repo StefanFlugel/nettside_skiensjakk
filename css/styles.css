@@ -436,3 +436,27 @@ footer {
     white-space: nowrap;         /* aldri linjeskift i teksten */
   }
 }
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.image-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.image-gallery figure {
+  margin: 0;
+}
+
+.image-gallery figcaption {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.4rem;
+  text-align: center;
+}
