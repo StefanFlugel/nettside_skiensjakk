@@ -436,6 +436,9 @@ footer {
     white-space: nowrap;         /* aldri linjeskift i teksten */
   }
 }
+.image-gallery figure.featured {
+  grid-column: 1 / -1;
+}
 .image-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
